@@ -62,7 +62,7 @@
 }
 
 .artwork-frame {
-    width: 100%;
+    width: 78%;
     max-width: min(500px, 90vw);
     margin: 0 auto;
     position: relative;
