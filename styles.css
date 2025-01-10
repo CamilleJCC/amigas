@@ -261,7 +261,5 @@ background: #c4e0ff;
     .artwork-frame {
         max-width: 100%;
         margin-left: auto;
-        display: flex;
-        flex-direction: column;
     }
 }
