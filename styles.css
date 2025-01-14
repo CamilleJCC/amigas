@@ -192,7 +192,7 @@ background: #c4e0ff;
     font-size: clamp(1rem, 2vw, 1.125rem);
 }
 
-.tooltip-text .question{
+.tooltip-text.question{
     width: 200px;
 }
 
