@@ -193,7 +193,9 @@ background: #c4e0ff;
 }
 
 .tooltip-text.question{
-    width: 200px;
+    width: 26em;
+    border-radius: 30px;
+    margin-top: 20px;
 }
 
 .tooltip-container:hover .tooltip-text {
