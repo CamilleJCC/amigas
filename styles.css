@@ -170,6 +170,11 @@ background: #c4e0ff;
     height: 38px;
     cursor: pointer;
 }
+.question-icon {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
 
 .tooltip-text {
     visibility: hidden;
@@ -185,6 +190,10 @@ background: #c4e0ff;
     margin-left: 10px;
     z-index: 1000;
     font-size: clamp(1rem, 2vw, 1.125rem);
+}
+
+.tooltip-text .question{
+    width: 200px;
 }
 
 .tooltip-container:hover .tooltip-text {
