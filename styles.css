@@ -135,6 +135,7 @@ p {
     font-size: clamp(1rem, 2vw, 1.125rem);
     cursor: pointer;
     transition: transform 0.3s ease;
+    height: fit-content;
 }
 .reveal-btn:hover{
 background: #b5f0de;
@@ -162,7 +163,6 @@ background: #b5f0de;
 .tooltip-container {
     position: relative;
     display: inline-block;
-    margin-top: 1.5rem;
 }
 
 .plus-icon {
