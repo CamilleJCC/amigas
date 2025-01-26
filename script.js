@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const revealBtn = document.querySelector('.reveal-btn');
     const input = document.querySelector('.magic-input');
     const answersContainer = document.querySelector('.answers-container');
+        const questionBtn = document.getElementById('questionBtn');
+    const questionPopup = document.getElementById('questionPopup');
+    
 
     function updateZoom(e) {
         const rect = artwork.getBoundingClientRect();
@@ -42,6 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
     artwork.addEventListener('mouseleave', () => {
         magnifier.style.display = 'none';
     });
+
+        questionBtn.addEventListener('click', () => {
+        overlay.style.display = 'block';
+        questionPopup.style.display = 'block';
+    });
+});
 
     function createSparkles(element) {
         const rect = element.getBoundingClientRect();
