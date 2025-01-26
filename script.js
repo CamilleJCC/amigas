@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const answersContainer = document.querySelector('.answers-container');
         const questionBtn = document.getElementById('questionBtn');
     const questionPopup = document.getElementById('questionPopup');
+    const overlay = document.getElementById('overlay');
+    const closeButtons = document.querySelectorAll('.close-btn');
     
 
     function updateZoom(e) {
@@ -46,9 +48,21 @@ document.addEventListener('DOMContentLoaded', () => {
         magnifier.style.display = 'none';
     });
 
-        questionBtn.addEventListener('click', () => {
+    questionBtn.addEventListener('click', () => {
         overlay.style.display = 'block';
         questionPopup.style.display = 'block';
+    });
+
+    overlay.addEventListener('click', () => {
+        overlay.style.display = 'none';
+        questionPopup.style.display = 'none';
+    });
+
+    closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            questionPopup.style.display = 'none';
+        });
     });
 });
 
