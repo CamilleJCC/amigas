@@ -440,3 +440,9 @@ padding:20px;
         margin-left: auto;
     }
 }
+
+@media (max-width:768px) {
+    .artwork-frame{
+        width:100%;
+    }
+}
