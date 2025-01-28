@@ -62,7 +62,7 @@
 }
 
 .artwork-frame {
-    width: 78%;
+    width: 90%;
     max-width: min(500px, 90vw);
     margin: 0 auto;
     position: relative;
@@ -469,4 +469,8 @@ font-size: 1.3rem;
     .artwork-frame{
         width:100%;
     }
+    p {
+    padding-right: 0px;
+   
+}
 }
