@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const questionPopup = document.getElementById('questionPopup');
     const overlay = document.getElementById('overlay');
     const closeButtons = document.querySelectorAll('.close-btn');
+    const tooltipText = document.querySelector('.tooltip-text');
+    const plusPopup = document.getElementById('tooltipText');
 
     function updateZoom(e) {
         const rect = artwork.getBoundingClientRect();
@@ -96,6 +98,15 @@ document.addEventListener('DOMContentLoaded', () => {
     questionBtn.addEventListener('click', () => {
         overlay.style.display = 'block';
         questionPopup.style.display = 'block';
+    });
+    plusBtn.addEventListener('click', () => {
+        if (tooltipText.style.visibility === 'visible') {
+            tooltipText.style.visibility = 'hidden';
+            tooltipText.style.display = 'none';
+        } else {
+            tooltipText.style.visibility = 'visible';
+            tooltipText.style.display = 'block';
+        }
     });
 
     overlay.addEventListener('click', () => {
