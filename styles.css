@@ -286,9 +286,6 @@ visibility: hidden;
     background: #faf7ba;
 }
 
-.tooltip-container:hover .tooltip-text {
-    visibility: visible;
-}
 
 
 .question-icon {
