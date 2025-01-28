@@ -223,9 +223,6 @@ visibility: hidden;
     padding: 0.6rem 1.3rem;
 }
 
-.tooltip-container:hover .tooltip-text {
-    visibility: visible;
-}
 /* Custom close button styles */
 .close-btn {
     position: absolute;
